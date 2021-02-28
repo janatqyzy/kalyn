@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Qalyn Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <h1>Calculate Your Groom's Qalyn Mal</h1>
+       
+        <p>Name:</p>
+        <input type="text" id="name">
+        <br>
+
+        <p>Starting bid:</p>
+        <input type="number" id="startingbid">
+        <br>
+        <br>
+
+        <label for="education">Education:</label>
+        <select id="education">
+            <option value="blank"></option>
+            <option value=1.5>Undergraduate degree</option>
+            <option value=1.2>College degree</option>
+            <option value=1.05>High school degree</option>
+            <option value=0.9>Middle school degree</option>
+        </select><br><br>
+
+        <label for="family_networth">Family net worth:</label>
+        <select id="family_networth">
+            <option value="blank"></option>
+            <option value=2>More than 100,000$</option>
+            <option value=1.5>Between 50,000$ and 100,000$</option>
+            <option value=1.2>Less than 50,000$</option>
+        </select><br>
+
+        <p>Skills:</p>
+        <input type="checkbox" class="skills" name="dombra" value=100>
+        <label for="dombra">Playing on dombra</label><br>
+        <input type="checkbox" class="skills" name="cook" value=200>
+        <label for="cook">Good cook</label><br>
+        <input type="checkbox" class="skills" name="character" value=150>
+        <label for="character">Easygoing character</label><br>
+        <input type="checkbox" class="skills" name="sing" value=100>
+        <label for="sing">Sings well</label><br>
+
+        <p>Age:</p>
+        <input type="radio" value="1.5" name="age"> Between 18-23<br>
+        <input type="radio" value="1.2" name="age"> Between 24-27<br>
+        <input type="radio" value="0.95" name="age"> 28+<br>
+
+        <p>Reputation:</p>
+        <input type="checkbox" class="reputation" name="gossips1" value=0.85>
+        <label for="gossips1"> Gossips about his parent's attitude</label><br>
+        <input type="checkbox" class="reputation" name="gossips2" value=0.9>
+        <label for="gossips2">Gossips about his character</label><br>
+        <input type="checkbox" class="reputation" name="gossips3" value=200>
+        <label for="gossips3">General gossips around his person</label><br>
+        <br>
+        <p>Love letter</p>
+        <textarea rows=5 cols=30 maxlength=500 placeholder="Type your love letter here" id="love_letter">
+        </textarea>
+        <br>
+        <button id="btn">Show</button>
+        <h1 id="output">Total</h1>
+    </div>
+
+    <script src="function.js"></script>
+
+   </body>
+</html>
